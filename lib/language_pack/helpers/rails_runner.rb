@@ -73,7 +73,7 @@ class LanguagePack::Helpers::RailsRunner
 
   include LanguagePack::ShellHelpers
 
-  def initialize(debug = env('HEROKU_DEBUG_RAILS_RUNNER'), timeout = 65)
+  def initialize(debug = env('HEROKU_DEBUG_RAILS_RUNNER'), timeout = 300)
     @command_array = []
     @output        = nil
     @success       = false
