@@ -5,7 +5,7 @@ require "language_pack"
 class LanguagePack::Cache
   # @param [String] path to the cache store
   def initialize(cache_path)
-    if cache_path
+    if cache_path && false # make this env var?
       @cache_base = Pathname.new(cache_path)
     else
       @cache_base = nil
